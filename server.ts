@@ -7,7 +7,7 @@ if (process.env.NODE_ENV === "development") {
 }
 
 export interface Env {
-    BEER: string;
+    // BEER: string;
 }
 declare module "@remix-run/server-runtime" {
     interface AppLoadContext {
@@ -19,9 +19,9 @@ declare module "@remix-run/server-runtime" {
 export const onRequest = createPagesFunctionHandler({
     build,
     getLoadContext: (context) => {
-        if (typeof context.env.BEER != "string") {
-            throw new Error("Environment Load Error: $BEER missing");
-        }
+        // if (typeof context.env.BEER != "string") {
+        //     throw new Error("Environment Load Error: $BEER missing");
+        // }
         return {
             env: context.env,
         };

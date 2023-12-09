@@ -1,29 +1,15 @@
-# My baseline Remix template for Cloudflare Pages
-
-- [Remix Docs](https://remix.run/docs)
-
-This starter comes with: 
-- Tailwindcss
+# Amazon product listing tools
 
 
+## Todos
+ - [] product description composer
+ - [] keywords composer
 
-## Bash utility
-```bash
-function :remix() {
 
-    # :remix [command] [option]
-    #        new                                        creates new remix project from a template
-    #                  cp                               uses this cloudflare pages template
+### Keywords Composer
+generic_keywords	
+Search Terms	
+Search terms that describe your product: no repetition, no competitor brand names or ASINs.Electric	Optional
 
-    if [ "$1" = 'new' ]; then
-        if [ "$2" = 'cp' ]; then
-            pnpm create remix@latest --template https://github.com/daguitosama/remix-cloudflare-pages-baseline
-        else
-            echo ""$2" template is not available"
-        fi
-    else
-        echo ""$1" command not available"
-    fi
-
-}
-```
+Titulos de groupon para walmart us
+Relacion de productos con problemas de Verishop (sku or id, parent style number) por el mirakle de verishop
