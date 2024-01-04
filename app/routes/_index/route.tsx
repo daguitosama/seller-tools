@@ -1,7 +1,9 @@
 import type { MetaFunction, LoaderFunctionArgs } from "@remix-run/cloudflare";
 import { json } from "@remix-run/cloudflare";
 import { DescriptionComposer } from "~/components/DescriptionComposer";
+import { Product_Benefits_Composer } from "~/components/ProductBenefitsComposer";
 import { SearchTermsComposer } from "~/components/SearchTermsComposer";
+import { Title_Composer } from "~/components/TitleComposer";
 export const meta: MetaFunction = () => {
     return [
         { title: "Amazon product listing tools" },
@@ -18,6 +20,8 @@ export default function Index() {
         <div className='min-h-screen w-full py-20'>
             <div className='max-w-screen-lg px-8 mx-auto grid gap-14'>
                 <Menu />
+                <Title_Composer />
+                <Product_Benefits_Composer />
                 <SearchTermsSection />
                 <DescriptionSection />
             </div>
