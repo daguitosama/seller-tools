@@ -48,6 +48,9 @@ devDependencies:
   eslint:
     specifier: ^8.38.0
     version: 8.38.0
+  react-jsbarcode:
+    specifier: ^0.4.2
+    version: 0.4.2(react@18.2.0)
   tailwindcss:
     specifier: ^3.3.3
     version: 3.3.3
@@ -4345,6 +4348,10 @@ packages:
       argparse: 2.0.1
     dev: true
 
+  /jsbarcode@3.11.6:
+    resolution: {integrity: sha512-G5TKGyKY1zJo0ZQKFM1IIMfy0nF2rs92BLlCz+cU4/TazIc4ZH+X1GYeDRt7TKjrYqmPfTjwTBkU/QnQlsYiuA==}
+    dev: true
+
   /jsesc@2.5.2:
     resolution: {integrity: sha512-OYu7XEzjkCQ3C5Ps3QIZsQfNpqoJyZZA99wd9aWd05NCtC5pWOkShK2mkL6HXQR6/Cy2lbNdPlZBpuQHXE63gA==}
     engines: {node: '>=4'}
@@ -5865,6 +5872,15 @@ packages:
 
   /react-is@17.0.2:
     resolution: {integrity: sha512-w2GsyukL62IJnlaff/nRegPQR94C/XXamvMWmSHRJ4y7Ts/4ocGRmTHvOs8PSE6pB3dWOrD/nueuU5sduBsQ4w==}
+    dev: true
+
+  /react-jsbarcode@0.4.2(react@18.2.0):
+    resolution: {integrity: sha512-0MLrre1bLKsiwB26h7/5Hh1fNli/2QpLtxhRn3FBgm1RgC8G65Chm3O9VitVYyHzcJkegp8U6xeog7DlDLrhNA==}
+    peerDependencies:
+      react: '>=17 <=18'
+    dependencies:
+      jsbarcode: 3.11.6
+      react: 18.2.0
     dev: true
 
   /react-refresh@0.14.0:

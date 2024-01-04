@@ -2,11 +2,17 @@ import type { LinksFunction } from "@remix-run/cloudflare";
 import { cssBundleHref } from "@remix-run/css-bundle";
 import { Links, LiveReload, Meta, Outlet, Scripts, ScrollRestoration } from "@remix-run/react";
 import global_styles from "~/global.css";
+import fonts_styles from "~/fonts.css";
+
 export const links: LinksFunction = () => [
     ...(cssBundleHref ? [{ rel: "stylesheet", href: cssBundleHref }] : []),
     {
         rel: "stylesheet",
         href: global_styles,
+    },
+    {
+        rel: "stylesheet",
+        href: fonts_styles,
     },
 ];
 

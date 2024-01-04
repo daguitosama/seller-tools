@@ -1,0 +1,7 @@
+/* Deja Vu Sans Condensed */
+
+@font-face {
+    font-family: 'Deja Vu Sans Condensed';
+    src: url('/fonts/DejaVuSansCondensed.ttf') format('truetype');
+    font-style: normal;
+}
