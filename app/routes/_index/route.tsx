@@ -1,6 +1,8 @@
 import type { MetaFunction, LoaderFunctionArgs } from "@remix-run/cloudflare";
 import { json } from "@remix-run/cloudflare";
 import { DescriptionComposer } from "~/components/DescriptionComposer";
+import { DirectionsComposer } from "~/components/DirectionsComposer";
+import { KeyProductFeatureComposer } from "~/components/KeyProductFeatureComposer";
 import { Product_Benefits_Composer } from "~/components/ProductBenefitsComposer";
 import { SearchTermsComposer } from "~/components/SearchTermsComposer";
 import { Title_Composer } from "~/components/TitleComposer";
@@ -21,9 +23,11 @@ export default function Index() {
             <div className='max-w-screen-lg px-8 mx-auto grid gap-14'>
                 <Menu />
                 <Title_Composer />
+                <KeyProductFeatureComposer />
                 <Product_Benefits_Composer />
                 <SearchTermsSection />
                 <DescriptionSection />
+                <DirectionsSection />
             </div>
         </div>
     );
@@ -139,6 +143,23 @@ function DescriptionSection() {
                 </h2>
             </div>
             <DescriptionComposer />
+            {/* <Description_Resources /> */}
+        </section>
+    );
+}
+
+function DirectionsSection() {
+    return (
+        <section className='grid gap-8'>
+            <div className='grid gap-4'>
+                <h2
+                    id='description-composer'
+                    className='text-2xl'
+                >
+                    Description Composer
+                </h2>
+            </div>
+            <DirectionsComposer />
             {/* <Description_Resources /> */}
         </section>
     );

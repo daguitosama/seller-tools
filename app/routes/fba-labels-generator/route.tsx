@@ -59,12 +59,20 @@ export default function FBA_Shipping_Labels_Gen_Route() {
                     </p>
                 </div>
             </div>
-            <div className='mt-10 print:mt-0'>
-                <Labels_Sheet labels_data={labels_data} />
+            <div className='mt-10 print:mt-0 border border-black flex items-center justify-center'>
+                <div className='scale-50 print:scale-100'>
+                    <div className='w-[216mm] print:w-auto h-[279mm] print:h-auto '>
+                        <Labels_Sheet labels_data={labels_data} />
+                    </div>
+                </div>
             </div>
         </div>
     );
 }
+
+/* A4  w-[8.3in] print:w-auto h-[11.7in] print:h-auto */
+/* US Letter  w-[216mm] print:w-auto h-[279mm] print:h-auto */
+
 interface FormElements extends HTMLFormControlsCollection {
     product_name: HTMLInputElement;
     product_id: HTMLInputElement;
@@ -262,7 +270,7 @@ function Label({ label_data }: { label_data: Label_Data }) {
         },
     };
     return (
-        <div className=' flex flex-col items-start'>
+        <div className='h-[1in] w-[2.625in] flex flex-col items-start border border-gray-500'>
             <Barcode
                 className=''
                 value={label_data.id}
